@@ -1,0 +1,54 @@
+* {
+    background-color: rgb(252, 252, 252);
+}
+
+header p, b{
+    background-color: antiquewhite;
+    padding: 1em;
+}
+
+header p {
+    border-top: solid rgb(193, 178, 158); 
+    color: rgb(82, 82, 121);
+}
+
+#p2 {
+    color: grey;
+}
+
+#a2 {
+    padding-top: 0;
+}
+
+header b {
+    padding: 0;
+}
+
+#logo {
+    background-color: aliceblue;
+}
+
+main h1 {
+    font-size: 2em;
+    padding-top: 1.5em;
+}
+
+main, header {
+    text-align: center;
+}
+
+#focaccia {
+    border-radius: 1em;
+}
+
+.left {
+    text-align: left;
+}
+
+hr {
+    color: rgb(170, 255, 255);
+}
+
+.borderLeft {
+    border-left: 1px solid orange;
+}
