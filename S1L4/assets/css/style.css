@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* IMPOSTAZIONI GENERALI */
+* {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    margin: 0 auto;
+}
+
+body {
+    background-image: url(../img/sfondo.png);
+    background-repeat: repeat;
+}
+
+#contenitore {
+    margin: 0 auto;
+    width: 450px;
+    padding: 0.2em;
+    background-color: white;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.center {
+    text-align: center;
+}
+
+
+/* HEADER */
+p {
+    font-size: 1em;
+    margin: 0.5em;
+}
+
+#space {
+    margin-top: 1em;
+}
+
+header {
+    background-color: rgb(94, 94, 190);
+}
+
+header a::before {content: "->";}
+header a::after {content: "<-";}
+
+header p {
+    /* text-transform: capitalize; */
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+ol li {
+    text-decoration: none;
+}
+
+
+/* MAIN */
+
+nav ul li a {
+    /* text-transform: capitalize; */
+    color: white;
+    text-decoration: none;
+}
+
+article h1 {
+    text-align: left;
+}
+
+.inline-icon {
+    display: inline-block;
+}
+
+#sub {
+    color: grey;
+    margin-bottom: 2em;
+}
+
+code {
+    background-color: rgb(202, 200, 200);
+    border: 0.2px solid grey;
+    display: inline;
+    border-radius: 0.3em;
+}
+
+article li {
+    margin-top: 0.5em;
+}
+
+/* ELEMENTI NEL MAIN - ARTICLE */
+
+/* TABELLE */
+
+thead {
+    background-color: rgb(78, 78, 148);
+}
+
+th {
+    color: aliceblue;
+}
+
+/* FORM */
+
+#sezione {
+    background-color: rgb(212, 204, 204);
+}
+
+/* ELEMENTI NELL' ASIDE */
+
+.correlati {
+    background-color: rgb(212, 204, 204);
+    border-radius: 0.3em;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: rgb(84, 134, 84);
+    color: white;
+}
+
+footer p {
+    margin-bottom: 1em;
+}
+
+footer a {
+    color: rgb(66, 33, 97);
+}
+
