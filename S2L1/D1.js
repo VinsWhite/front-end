@@ -135,3 +135,5 @@ let uguaglianza = (name1 == name2) ? "I due nomi sono uguali" : "I due nomi non 
 console.log(name1);
 console.log(name2);
 console.log(uguaglianza);
+
+//N.B. per evitare conflitti, ho commentato diverse righe di codice
