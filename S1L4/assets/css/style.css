@@ -89,6 +89,10 @@ article li {
     margin-top: 0.5em;
 }
 
+#yt {
+    border-radius: 1em;
+}
+
 /* ELEMENTI NEL MAIN - ARTICLE */
 
 /* TABELLE */
@@ -100,6 +104,11 @@ thead {
 th {
     color: aliceblue;
 }
+
+tr:nth-child(even) {
+    background-color: rgb(212, 204, 204);
+}
+
 
 /* FORM */
 
