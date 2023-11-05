@@ -9,9 +9,9 @@
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 function giveMeRandom(m) { //funzione costruita precedentemente in S2L4
-    let arr = []; 
+    let arr = [];
 
-    for (let i = 0; i < m; i++) { 
+    for (let i = 0; i < m; i++) {
         let rand = Math.floor(Math.random() * 11);
         arr.push(rand);
     }
@@ -19,23 +19,26 @@ function giveMeRandom(m) { //funzione costruita precedentemente in S2L4
     return arr;
 }
 
-function checkArray(ret) {
-    for (let i = 0; i < ret.length; i++) {
-        if (ret[i] > 5) {
-            console.log("Il valore è maggiore di 5");
-        } else if (ret[i] < 5) {
-            console.log("Il valore è minore di 5");
+function checkArray(arr) {
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] > 5) {
+            console.log("Il valore è maggiore di 5", arr[i]);
+            sum += arr[i];
+        } else if (arr[i] < 5) {
+            console.log("Il valore è minore di 5", arr[i]);
         } else {
-            console.log("Il valore è uguale a 5");
+            console.log("Il valore è uguale a 5", arr[i]);
         }
     }
+    return sum;
 }
 
 let m = prompt("Inserisci un numero: ");
 let ret = giveMeRandom(m);
 let r = checkArray(ret);
 
-console.log("Array: ", ret, " Verifica: ", r); //ERRORE: UNDEFINED
+console.log("Array: ", ret, " Somma dei valori maggiori di 5: ", r);
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 
