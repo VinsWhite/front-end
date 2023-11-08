@@ -1,0 +1,38 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+h1 {
+    cursor: pointer;
+}
+
+h2 {
+    cursor: pointer;
+}
+
+h2:hover {
+    text-decoration: underline;
+}
+
+body {
+    margin: 0;
+    user-select: none;
+}
+
+body div,
+footer {
+    padding: 1rem;
+}
+
+footer {
+    padding: 1rem;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.myHeading {
+    color: #ff00d6;
+}
