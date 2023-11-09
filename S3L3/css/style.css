@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+
+body {
+    box-sizing: border-box;
+}
+
+#contenitore {
+    margin: auto;
+    width: 50%;
+}
+
+header {
+    background-image: linear-gradient(to right, #4caf50, rgb(76, 156, 76));
+    border-radius: 0.8em 0.8em 0 0;
+    cursor: pointer;
+}
+
+h1 {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+    font-size: 2em;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+    text-align: center;
+}
+
+main {
+    background-color: #e6eee8;
+    padding: 1em;
+}
+
+main h2 {
+    margin: 0.8em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+#inserimento {
+    margin: 0 1em;
+    width: 20em;
+}
+
+main p {
+    margin-left: 1em;
+    margin-bottom: 0.3em;
+    cursor: pointer;
+}
+
+#nuoveTask p {
+    margin-top: 0.2em;
+}
+
+#t {
+    margin-top: 2em;
+    background-color: #7ec681;
+    padding: 0.4em;
+    width: 30%;
+    border-radius: 0.2em;
+}
+
+footer {
+    background-image: linear-gradient(to right, #7ec681, rgb(76, 156, 76));
+    border-radius: 0 0 0.8em 0.8em;
+    text-align: center;
+    cursor: pointer;
+}
+
+footer a:hover {
+    font-weight: bold;
+}
+
+footer p {
+    display: inline-block;
+}
+
+footer a {
+    display: inline-block;
+    padding: 0.2em;
+    color: black;
+}
