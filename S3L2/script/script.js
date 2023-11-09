@@ -199,3 +199,13 @@ function deleteVowels() {
 }
 
 deleteVowels(); */
+
+
+//Prove generali extra personali:
+
+let cambiaH2 = () => {
+    let a = document.querySelector("#link1");
+    a.innerText = "Questo link porta al sito di Google"
+}
+
+cambiaH2();

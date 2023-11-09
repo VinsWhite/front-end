@@ -10,7 +10,7 @@
 
   <body>
     <div>
-      <h1 id="h" onclick = "makeItClickable">Questo è il titolo della pagina</h1>
+      <h1 id="h" onclick = "makeItClickable()">Questo è il titolo della pagina</h1>
       <h2>Questo è il sottotitolo della pagina</h2>
     </div>
 
@@ -29,7 +29,7 @@
         <li>3rd</li>
       </ul>
 
-      <a href="https://epicode.com/it/">Questo link porta al sito di Epicode</a>
+      <a href="https://epicode.com/it/" id="link1">Questo link porta al sito di Epicode</a>
 
       <div>
         <p>Questo testo è un placeholder per gli esercizi</p>
@@ -38,14 +38,14 @@
 
     <div>
       <p>Anche questo testo è per gli esercizi</p>
-      <h2 id="changeMyColor" style="color: #ff00d6" onclick="changeColorWithRandom">
+      <h2 id="changeMyColor" style="color: #ff00d6" onclick="changeColorWithRandom()">
         Apri questa pagina con VSCode per scoprire gli esercizi
       </h2>
     </div>
 
     <div id="tableArea"></div>
 
-    <footer onclick="revealFooterLink">
+    <footer onclick="revealFooterLink()">
       <h3>
         DOM Manipulation is super
         <a

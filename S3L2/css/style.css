@@ -8,11 +8,11 @@ h1 {
     cursor: pointer;
 }
 
-h2 {
+#changeMyColor {
     cursor: pointer;
 }
 
-h2:hover {
+#changeMyColor:hover {
     text-decoration: underline;
 }
 
