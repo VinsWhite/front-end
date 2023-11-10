@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+
+/* Impostazioni generali */
+
+body {
+    box-sizing: border-box;
+    background-color: #eeeee4;
+}
+
+#contenitore {
+    width: 50%;
+    margin: auto;
+}
+
+.mouse {
+    cursor: pointer;
+    user-select: none;
+}
+
+/* Header */ 
+header {
+    background-color: #154c79;
+    border-radius: 0.5em;
+}
+
+h1 {
+    font-size: 2.3em;
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+    text-align: center;
+    color: white;
+}
+
+/* Main */
+
+main {
+    background-color: rgb(223, 229, 234);
+}
+
+#tab h3 {
+    padding: 2em;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#giocatore h3 {
+    padding: 2em;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+#tabellone {
+    padding: 1em;
+    overflow: auto;
+}
+
+/* Footer */
+
+footer {
+    background-image: linear-gradient(to right, #154c79, rgb(161, 176, 161));
+    border-radius: 0 0 0.8em 0.8em;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+    padding: 2em;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    font-weight: bold;
+}
