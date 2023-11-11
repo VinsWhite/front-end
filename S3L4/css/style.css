@@ -19,7 +19,7 @@ body {
 
 /* Header */ 
 header {
-    background-color: #154c79;
+    background-image: linear-gradient(to left, #eb4250, #d05761);
     border-radius: 0.5em;
 }
 
@@ -54,13 +54,16 @@ main {
 
 #tabellone {
     padding: 1em;
-    overflow: auto;
+}
+
+#player {
+    padding: 0 4em 4em 4em;
 }
 
 /* Footer */
 
 footer {
-    background-image: linear-gradient(to right, #154c79, rgb(161, 176, 161));
+    background-image: linear-gradient(to bottom, #c1525b, #9a4148);
     border-radius: 0 0 0.8em 0.8em;
 }
 
