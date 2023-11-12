@@ -1,4 +1,4 @@
-/* //funzione per animare la scritta Tombola
+/* //funzione per animare la scritta Tombola - NON FUNZIONANTE
 let scritta = () => {
     let s = document.querySelector("h1");
     s.style.fontWeight = "bold";
@@ -60,6 +60,7 @@ let getButton = () => {
     button.style.margin = "1em";
     divBtn.style.textAlign = "right";
     button.style.textTransform = "uppercase";
+    button.disabled = true;
 
     divBtn.appendChild(button);
 
@@ -90,6 +91,8 @@ let getReset = () => {
     resetButton.style.margin = "1em";
     resetButton.style.textAlign = "right";
     resetButton.style.textTransform = "uppercase";
+    resetButton.disabled = true;
+    resetButton.classList.add("attivazione");
 
     divBtn.appendChild(resetButton);
 
@@ -99,7 +102,7 @@ let getReset = () => {
         numSelezionatoPlayer = [];
         annullaCasella();
         rimuoviTabellaGiocatore();
-        document.querySelector("#generateButton").disabled = false;
+        document.querySelector("#generateButton").disabled = true;
         document.querySelector("#scelta").style.display = "block";
         sceltaBtn.forEach(e => {
             e.style.display = "inline-block";
@@ -149,6 +152,8 @@ let scelta = () => {
 
         sceltaBtn[i].addEventListener('click', (evt) => {
             getGiocatore(i + 1); // Passa il numero di cartelle selezionate
+            document.querySelector("#generateButton").disabled = false;
+            document.querySelector(".attivazione").disabled = false;
         });
     }
 }

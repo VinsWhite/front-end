@@ -60,6 +60,10 @@ main {
     padding: 0 4em 4em 4em;
 }
 
+#player table {
+    margin-bottom: 2em;
+}
+
 /* Footer */
 
 footer {
