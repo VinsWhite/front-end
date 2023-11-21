@@ -369,3 +369,9 @@ footer a {
         justify-content: end;
     }
 }
+
+@media print {
+    header, iframe, aside, section, footer {
+        display: none;
+    }
+}
