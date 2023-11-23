@@ -1,0 +1,898 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); /* ROBOTO FONTS*/
+/* impostazioni generali */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 2em;
+    color: #742305;
+    margin: 1em;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1em;
+    color: #742305;
+    margin: 1em;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: #742305;
+    margin: 1em;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1em;
+    color: #742305;
+    margin: 1em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 1em;
+    color: #742305;
+    padding: 0.5em;
+}
+
+header {
+    background-color: #fef7e2;
+}
+
+/* HEADER --> navbar */
+
+@media screen and (max-width: 576px) { /* mobile version */ 
+    
+    header {
+        margin: 2em 1em;
+        border-radius: 6em;
+    }
+
+    nav ul li a {
+        font-size: 1.1em;
+        background-color: #ffdf7f;
+        border-radius: 1em;
+        margin: 0.5em;
+    }
+
+    nav li:nth-child(3) {
+        order: -1; /* SHOP viene spostato sopra gli altri */
+        margin: 2em 5em;
+        align-self: flex-start;
+    }
+
+    nav li:nth-child(1),
+    nav li:nth-child(2),
+    nav li:nth-child(4),
+    nav li:nth-child(5) {
+        order: 1;
+    }
+
+    nav ul li a:hover {
+        font-size: 1.1em;
+        background-color: rgb(224, 211, 171);
+        color: #9e634d;
+    }
+
+    nav li img {
+        width: 1.2rem;
+        padding-right: 0.3em;
+    }
+
+    nav li:nth-child(3) a { /* SHOP più grande*/
+        font-size: 1.2rem;
+        font-weight: 700;
+        padding: 1.2rem;
+        text-transform: uppercase;
+    }
+
+    nav li:nth-child(3) a:hover { 
+        font-size: 1.2rem;
+        font-weight: 700;
+        padding: 1.2rem;
+        text-transform: uppercase;
+    }
+
+    ul { /* contenitore della barra di navigazione */
+        display: flex;
+        height: 15em;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 2em;
+        margin: 0.4em 0.3em;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) { /* tablet version */
+    
+
+    nav ul li a {
+        font-size: 1.1em;
+        background-color: #ffdf7f;
+        border-radius: 1em;
+        margin: 0.5em;
+    }
+
+    nav ul li a:hover {
+        font-size: 1.1em;
+        background-color: rgb(224, 211, 171);
+        color: #9e634d;
+    }
+
+    nav li img {
+        width: 1.2rem;
+        padding-right: 0.3em;
+    }
+
+    nav li:nth-child(3) a { /* SHOP più grande*/
+        font-size: 1.2rem;
+        font-weight: 700;
+        padding: 1.2rem;
+        text-transform: uppercase;
+    }
+
+    nav li:nth-child(3) a:hover { 
+        font-size: 1.2rem;
+        font-weight: 700;
+        padding: 1.2rem;
+        text-transform: uppercase;
+    }
+
+    ul { /* contenitore della barra di navigazione */
+        display: flex;
+        height: 7em;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 2.5em;
+        margin: 0.5em 0.4em;
+    }
+
+}
+
+@media screen and (min-width: 767px) and (max-width: 1024px) { /* medium version */ 
+    
+
+    nav ul li a { /* diventa sidebar */
+        font-size: 1.3em;
+        background-color: #ffdf7f;
+        border-radius: 1em;
+        margin: 0.5em;
+    }
+
+    nav ul li a:hover {
+        font-size: 1.3em;
+        background-color: rgb(224, 211, 171);
+        color: #9e634d;
+    }
+
+    nav li img {
+        width: 1.2rem;
+        padding-right: 0.3em;
+    }
+
+    nav li:nth-child(3) a { /* SHOP più grande*/
+        order: -1;
+        font-size: 1.2rem;
+        font-weight: 700;
+        padding: 1.2rem;
+        text-transform: uppercase;
+    }
+
+    nav li:nth-child(3) a:hover { 
+        order: -1;
+        font-size: 1.2rem;
+        font-weight: 700;
+        padding: 1.2rem;
+        text-transform: uppercase;
+    }
+
+    nav li:nth-child(1),
+    nav li:nth-child(2),
+    nav li:nth-child(4),
+    nav li:nth-child(5) {
+        order: 1;
+    }
+
+    li {
+        margin-top: 6em;
+        height: 3em; 
+        display: flex;
+        align-items: center;
+    }
+
+    ul { /* contenitore della barra di navigazione */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        width: 17%;
+        height: 100%;
+    }
+
+    h1 {
+        font-size: 2.5em;
+        margin: 0.5em 0.4em;
+    }
+
+    #contenitore {
+        margin-left: 17%;;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1199px) { /* medium-large version */ 
+    
+
+    nav ul li a { /* diventa sidebar */
+        font-size: 1.3em;
+        background-color: #ffdf7f;
+        border-radius: 1em;
+        margin: 0.5em;
+    }
+
+    nav ul li a:hover {
+        font-size: 1.3em;
+        background-color: rgb(224, 211, 171);
+        color: #9e634d;
+    }
+
+    nav li img {
+        width: 1.2rem;
+        padding-right: 0.3em;
+    }
+
+    nav li:nth-child(3) a { /* SHOP più grande*/
+        order: -1;
+        font-size: 1.2rem;
+        font-weight: 700;
+        padding: 1.2rem;
+        text-transform: uppercase;
+    }
+
+    nav li:nth-child(3) a:hover { 
+        order: -1;
+        font-size: 1.2rem;
+        font-weight: 700;
+        padding: 1.2rem;
+        text-transform: uppercase;
+    }
+
+    nav li:nth-child(1),
+    nav li:nth-child(2),
+    nav li:nth-child(4),
+    nav li:nth-child(5) {
+        order: 1;
+    }
+
+    li {
+        margin-top: 6em;
+        height: 3em; 
+        display: flex;
+        align-items: center;
+    }
+
+    ul { /* contenitore della barra di navigazione */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        width: 17%;
+        height: 100%;
+    }
+
+    h1 {
+        font-size: 2.5em;
+        margin: 0.5em 0.4em;
+    }
+
+    #contenitore {
+        margin-left: 17%;;
+    }
+}
+
+@media screen and (min-width: 1200px) { /* extralarge version */ 
+    
+
+    nav ul li a { /* diventa sidebar */
+        font-size: 1.3em;
+        background-color: #ffdf7f;
+        border-radius: 1em;
+        margin: 0.5em;
+    }
+
+    nav ul li a:hover {
+        font-size: 1.3em;
+        background-color: rgb(224, 211, 171);
+        color: #9e634d;
+    }
+
+    nav li img {
+        width: 1.2rem;
+        padding-right: 0.3em;
+    }
+
+    nav li:nth-child(3) a { /* SHOP più grande*/
+        order: -1;
+        font-size: 1.2rem;
+        font-weight: 700;
+        padding: 1.2rem;
+        text-transform: uppercase;
+    }
+
+    nav li:nth-child(3) a:hover { 
+        order: -1;
+        font-size: 1.2rem;
+        font-weight: 700;
+        padding: 1.2rem;
+        text-transform: uppercase;
+    }
+
+    nav li:nth-child(1),
+    nav li:nth-child(2),
+    nav li:nth-child(4),
+    nav li:nth-child(5) {
+        order: 1;
+    }
+
+    li {
+        margin-top: 6em;
+        height: 3em; 
+        display: flex;
+        align-items: center;
+    }
+
+    ul { /* contenitore della barra di navigazione */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        width: 17%;
+        height: 100%;
+    }
+
+    h1 {
+        font-size: 2.5em;
+        margin: 0.5em 0.4em;
+    }
+
+    #contenitore {
+        margin-left: 17%;;
+    }
+}
+
+
+/*/////////// MAIN /////////////*/
+
+@media screen and (max-width: 576px) { /* mobile version */  
+    #products div:first-of-type {
+        width: 18em;
+    }
+
+    main img { /* immagine del miele */
+        width: 100%;
+        border-radius: 1em 1em 0 0;
+    }
+
+    #productsIMG { /* contenitore dei prodotti */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 0 1em;
+    }
+    
+    #products {
+        background-color: #fef7e2;
+        border-radius: 1em;
+        margin: 1em 0;
+        width: 18em;
+        height: 20em;
+    }
+
+    #description { /* descrizione dei prodotti */
+        display: flex;
+        justify-content: space-between;
+    } 
+
+    #description div:first-of-type {
+        flex-direction: column;
+    }
+
+    #prezzo { /* prezzo dei prodotti con comportamento differente */
+        align-self: center;
+    }
+
+    #description p {
+        margin: 0.5em;
+    }
+
+    #products div:last-of-type {
+        display: flex;
+        justify-content: center;
+    }
+    
+
+    #products div:last-of-type button {
+        background-color: #ffdf7f;
+        color: #742305;
+        font-size: 0.7em;
+        font-weight: bold;
+        border: 0;
+        padding: 0.5em 2em;
+        border-radius: 0.8em;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) { /* tablet version */ 
+    
+    #products div:first-of-type {
+        width: 17em;
+    }
+
+    main img { /* immagine del miele */
+        width: 100%;
+        border-radius: 1em 1em 0 0;
+    }
+
+    #productsIMG { /* contenitore dei prodotti */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 0 1em;
+    }
+    
+    #products {
+        background-color: #fef7e2;
+        border-radius: 1em;
+        margin: 1em 0;
+        width: 17em;
+        height: 18em;
+    }
+
+    #description { /* descrizione dei prodotti */
+        display: flex;
+        justify-content: space-between;
+    } 
+
+    #description div:first-of-type {
+        flex-direction: column;
+    }
+
+    #prezzo { /* prezzo dei prodotti con comportamento differente */
+        align-self: center;
+    }
+
+    #description p {
+        margin: 0.5em;
+    }
+
+    #products div:last-of-type {
+        display: flex;
+        justify-content: center;
+    }
+    
+
+    #products div:last-of-type button {
+        background-color: #ffdf7f;
+        color: #742305;
+        font-size: 0.7em;
+        font-weight: bold;
+        border: 0;
+        padding: 0.5em 2em;
+        border-radius: 0.8em;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1024px) { /* medium version */ 
+    #products div:first-of-type {
+        width: 12em;
+    }
+
+    main img { /* immagine del miele */
+        width: 100%;
+        border-radius: 1em 1em 0 0;
+    }
+
+    #productsIMG { /* contenitore dei prodotti */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 0 1em;
+    }
+    
+    #products {
+        background-color: #fef7e2;
+        border-radius: 1em;
+        margin: 1em 0;
+        width: 12em;
+        height: 18em;
+    }
+
+    #productsIMG div:nth-child(4) {
+        display: none;
+    }
+
+    #description { /* descrizione dei prodotti */
+        display: flex;
+        justify-content: space-between;
+    } 
+
+    #description div:first-of-type {
+        flex-direction: column;
+    }
+
+    #prezzo { /* prezzo dei prodotti con comportamento differente */
+        align-self: center;
+    }
+
+    #description p {
+        margin: 0.5em;
+    }
+
+    #products div:last-of-type {
+        display: flex;
+        justify-content: center;
+    }
+    
+
+    #products div:last-of-type button {
+        background-color: #ffdf7f;
+        color: #742305;
+        font-size: 0.7em;
+        font-weight: bold;
+        border: 0;
+        padding: 0.5em 2em;
+        border-radius: 0.8em;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1199px) { /* medium-large version */ 
+    #products div:first-of-type {
+        width: 12em;
+    }
+
+    main img { /* immagine del miele */
+        width: 100%;
+        border-radius: 1em 1em 0 0;
+    }
+
+    #productsIMG { /* contenitore dei prodotti */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 0 1em;
+    }
+    
+    #products {
+        background-color: #fef7e2;
+        border-radius: 1em;
+        margin: 1em 0;
+        width: 12em;
+        height: 18em;
+    }
+
+    #description { /* descrizione dei prodotti */
+        display: flex;
+        justify-content: space-between;
+    } 
+
+    #description div:first-of-type {
+        flex-direction: column;
+    }
+
+    #prezzo { /* prezzo dei prodotti con comportamento differente */
+        align-self: center;
+    }
+
+    #description p {
+        margin: 0.5em;
+    }
+
+    #products div:last-of-type {
+        display: flex;
+        justify-content: center;
+    }
+    
+
+    #products div:last-of-type button {
+        background-color: #ffdf7f;
+        color: #742305;
+        font-size: 0.7em;
+        font-weight: bold;
+        border: 0;
+        padding: 0.5em 2em;
+        border-radius: 0.8em;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1200px){ /* extralarge version */ 
+    #products div:first-of-type {
+        width: 12em;
+    }
+
+    main img { /* immagine del miele */
+        width: 100%;
+        border-radius: 1em 1em 0 0;
+    }
+
+    #productsIMG { /* contenitore dei prodotti */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 0 1em;
+    }
+    
+    #products {
+        background-color: #fef7e2;
+        border-radius: 1em;
+        margin: 1em 0;
+        width: 12em;
+        height: 18em;
+    }
+
+    #description { /* descrizione dei prodotti */
+        display: flex;
+        justify-content: space-between;
+    } 
+
+    #description div:first-of-type {
+        flex-direction: column;
+    }
+
+    #prezzo { /* prezzo dei prodotti con comportamento differente */
+        align-self: center;
+    }
+
+    #description p {
+        margin: 0.5em;
+    }
+
+    #products div:last-of-type {
+        display: flex;
+        justify-content: center;
+    }
+    
+
+    #products div:last-of-type button {
+        background-color: #ffdf7f;
+        color: #742305;
+        font-size: 0.7em;
+        font-weight: bold;
+        border: 0;
+        padding: 0.5em 2em;
+        border-radius: 0.8em;
+        text-align: center;
+    }
+}
+
+
+/*/////////////////// ARTICLE ////////////////////*/
+
+@media screen and (max-width: 576px) { /* mobile version */  
+    h2 {
+        font-size: 1.8em;
+        color: #742305;
+        margin: 1em 0.3em 0.5em 0.5em;
+        font-weight: bold;
+    }
+
+    article {
+        background-color: #fef7e2;
+        margin: 0 1em;
+        border-radius: 1em;
+    }
+
+    article h3 {
+        font-size: 1.5em;
+        padding-top: 0.5em;
+        padding-bottom: 0.2em;
+        margin: 0 1em;
+    }
+
+    article p {
+        margin: 0 1em;
+        padding: 0 0 1em 0.7em;
+        line-height: 1.3em;
+    }
+
+    article picture {
+        display: block;
+        text-align: center;
+    }
+
+    article picture img {
+        width: 90%;
+        display: inline-block; 
+        margin-bottom: 1em;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) { /* tablet version */ 
+    
+    h2 {
+        font-size: 2em;
+        color: #742305;
+        margin: 1em 0.3em 0.5em 0.5em;
+        font-weight: bold;
+    }
+
+    article {
+        background-color: #fef7e2;
+        margin: 0 1em;
+        border-radius: 1em;
+    }
+
+    article h3 {
+        padding-top: 0.5em;
+        padding-bottom: 0.2em;
+        margin: 0 1em;
+    }
+
+    article p {
+        margin: 0 1em;
+        padding: 0 0 1em 0.7em;
+        line-height: 1.3em;
+    }
+
+    article picture {
+        display: block;
+        text-align: center;
+    }
+
+    article picture img {
+        width: 90%;
+        display: inline-block; 
+        margin-bottom: 1em;
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1024px) { /* medium version */ 
+    h2 {
+        font-size: 2em;
+        color: #742305;
+        margin: 1em 0.3em 0.5em 0.5em;
+        font-weight: bold;
+    }
+
+    article {
+        background-color: #fef7e2;
+        margin: 0 1em;
+        border-radius: 1em;
+    }
+
+    article h3 {
+        padding-top: 0.5em;
+        padding-bottom: 0.2em;
+        margin: 0 1em;
+    }
+
+    article p {
+        margin: 0 1em;
+        padding: 0 0 1em 0.7em;
+        line-height: 1.3em;
+    }
+
+    article picture {
+        display: block;
+        text-align: center;
+    }
+
+    article picture img {
+        width: 90%;
+        display: inline-block; 
+        margin-bottom: 1em;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1199px) { /* medium-large version */ 
+    h2 {
+        font-size: 2em;
+        color: #742305;
+        margin: 1em 0.3em 0.5em 0.5em;
+        font-weight: bold;
+    }
+
+    article {
+        background-color: #fef7e2;
+        margin: 0 1em;
+        border-radius: 1em;
+    }
+
+    article h3 {
+        padding-top: 0.5em;
+        padding-bottom: 0.2em;
+        margin: 0 1em;
+    }
+
+    article p {
+        margin: 0 1em;
+        padding: 0 0 1em 0.7em;
+        line-height: 1.3em;
+    }
+
+    article picture {
+        display: block;
+        text-align: center;
+    }
+
+    article picture img {
+        width: 90%;
+        display: inline-block; 
+        margin-bottom: 1em;
+    }
+}
+
+@media screen and (min-width: 1200px) { /* extralarge version */ 
+    h2 {
+        font-size: 2em;
+        color: #742305;
+        margin: 1em 0.3em 0.5em 0.5em;
+        font-weight: bold;
+    }
+
+    article {
+        background-color: #fef7e2;
+        margin: 0 1em;
+        border-radius: 1em;
+    }
+
+    article h3 {
+        padding-top: 0.5em;
+        padding-bottom: 0.2em;
+        margin: 0 1em;
+    }
+
+    article p {
+        font-size: 1.2em;
+        margin: 0 1em;
+        padding: 0 0 1em 0.7em;
+        line-height: 1.3em;
+    }
+
+    article picture {
+        display: block;
+        text-align: center;
+    }
+
+    article picture img {
+        width: 90%;
+        display: inline-block; 
+        margin-bottom: 1em;
+    }
+}
+
