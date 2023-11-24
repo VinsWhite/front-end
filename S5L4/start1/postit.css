@@ -1,0 +1,90 @@
+body {
+    background-color: #8e8e9b;
+    font-family: 'Indie Flower';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+#contenitore {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100em;
+    min-height: 50em;
+}
+
+#contenitore div {
+    display: flex;
+    width: 20em;
+    height: 15em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1.7em;
+    box-shadow: 0.4em 0.3em 0.3em #726c6c;
+}
+
+#contenitore div:nth-child(1),
+#contenitore div:nth-child(5),
+#contenitore div:nth-child(7) {
+    background-color: #e0e0ae;
+    transform: rotate(-3deg); /*ruotiamo di 3 gradi*/
+    transition-duration: 500ms;
+}
+
+#contenitore div:nth-child(1):hover,
+#contenitore div:nth-child(5):hover,
+#contenitore div:nth-child(7):hover {
+    background-color: #e0e0ae;
+    transform: rotate(0deg);
+    transform: scale(1.2);
+    transition-duration: 500ms;
+    box-shadow: 0.4em 0.3em 0.3em #4c4848;
+}
+
+
+#contenitore div:nth-child(2),
+#contenitore div:nth-child(4),
+#contenitore div:nth-child(8) {
+    background-color: #abc7ad;
+    transform: rotate(2deg); /*ruotiamo di 2 gradi*/
+    transition-duration: 500ms;
+}
+
+#contenitore div:nth-child(2):hover,
+#contenitore div:nth-child(4):hover,
+#contenitore div:nth-child(8):hover {
+    background-color: #abc7ad;
+    transform: rotate(0deg); 
+    transform: scale(1.2);
+    transition-duration: 500ms;
+    box-shadow: 0.4em 0.3em 0.3em #4c4848;
+}
+
+
+#contenitore div:nth-child(3),
+#contenitore div:nth-child(6) {
+    background-color: #b3b2ce;
+    transform: rotate(-5deg); /*ruotiamo di 5 gradi*/
+    transition-duration: 500ms;
+}
+
+#contenitore div:nth-child(3):hover,
+#contenitore div:nth-child(6):hover {
+    background-color: #b3b2ce;
+    transform: rotate(0deg);
+    transform: scale(1.2);
+    transition-duration: 500ms;
+    box-shadow: 0.4em 0.3em 0.3em #4c4848;
+}
