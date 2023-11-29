@@ -1,0 +1,43 @@
+/*CSS - CUSTON*/
+
+/* colori di backgroud */
+.bg-grigioBianco {
+    background-color: #f8f8f9;
+}
+
+.bg-azzurro {
+    background-color: #11caf1;
+}
+
+/* colori di bordi */
+.border-lightGrey {
+    color: #d8d8dc;
+}
+
+/* testo */
+.font-sizeGrande {
+    font-size: 3em;
+}
+
+.text-lightGrey {
+    color: #d8d8dc;
+}
+
+/* grandezze div */
+
+.grandezza10 {
+    width: 10%;
+    height: 10%;
+}
+
+.grandezza33 {
+    width: 33%;
+}
+
+.grandezza50 {
+    width: 50%;
+}
+
+.grandezza66 {
+    width: 66%;
+}
