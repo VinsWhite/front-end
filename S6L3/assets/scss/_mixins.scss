@@ -1,0 +1,14 @@
+@mixin floating {
+    border-radius: 1em;
+    box-shadow: 1em 2em #888888;
+    border: 0.2em solid black;
+}
+
+@mixin grid($linee: 2) {
+    display: grid;
+    grid-template-columns: repeat($linee, 1fr);
+}
+
+.griglia {
+    @include grid(3);
+}

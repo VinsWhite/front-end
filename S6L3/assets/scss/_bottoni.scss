@@ -1,0 +1,13 @@
+/* PULSANTI */
+
+.btn1 {
+    background-color: map-get($colore, btn1);
+}
+
+.btn2 {
+    background-color: map-get($colore, btn2);
+}
+
+.btn3 {
+    background-color: map-get($colore, btn3);
+}
