@@ -4,9 +4,14 @@
     border: 0.2em solid black;
 }
 
-@mixin grid($linee: 2) {
+@mixin grid($linee) {
     display: grid;
     grid-template-columns: repeat($linee, 1fr);
+}
+
+@mixin button {
+    border: 0;
+    color: map-get($colore, text-bianco);
 }
 
 .griglia {

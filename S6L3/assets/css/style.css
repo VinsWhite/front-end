@@ -58,14 +58,20 @@ table {
 /* PULSANTI */
 .btn1 {
   background-color: #0e6cff;
+  border: 0;
+  color: #fff;
 }
 
 .btn2 {
   background-color: #ff8700;
+  border: 0;
+  color: #fff;
 }
 
 .btn3 {
   background-color: #4caf50;
+  border: 0;
+  color: #fff;
 }
 
 .griglia {

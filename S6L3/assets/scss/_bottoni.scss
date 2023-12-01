@@ -2,12 +2,15 @@
 
 .btn1 {
     background-color: map-get($colore, btn1);
+    @include button;
 }
 
 .btn2 {
     background-color: map-get($colore, btn2);
+    @include button;
 }
 
 .btn3 {
     background-color: map-get($colore, btn3);
+    @include button;
 }
