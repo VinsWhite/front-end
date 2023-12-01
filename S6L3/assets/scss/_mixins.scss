@@ -9,11 +9,6 @@
     grid-template-columns: repeat($linee, 1fr);
 }
 
-@mixin button {
-    border: 0;
-    color: map-get($colore, text-bianco);
-}
-
 .griglia {
     @include grid(3);
 }

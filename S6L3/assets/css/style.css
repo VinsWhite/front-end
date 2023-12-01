@@ -55,6 +55,11 @@ table {
 
 /* COLORI */
 /* FONT */
+/* font size per l'H1 */
+h1 {
+  font-size: 2em;
+}
+
 /* PULSANTI */
 .btn1 {
   background-color: #0e6cff;

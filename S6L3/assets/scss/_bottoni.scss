@@ -1,5 +1,10 @@
 /* PULSANTI */
 
+@mixin button {
+    border: 0;
+    color: map-get($colore, text-bianco);
+}
+
 .btn1 {
     background-color: map-get($colore, btn1);
     @include button;
