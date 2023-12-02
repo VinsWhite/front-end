@@ -69,25 +69,191 @@
             </div>
           </div>
         </nav>
-    </header>
 
-    <!-- main -->
-    <main>
       
       <!-- sezione welcome -->
-      <section class="d-flex bg-primary">
-        <div>
-          <h1 class="h1">Welcome Web Students!</h1>
+      <section id="sec-welcome" class="d-flex container-fluid bg-primary">
+        <div class="p-5 m-5 d-flex justify-content-center flex-column">
+          <h1 class="h1 text-light fw-bold">Welcome Web Students!</h1>
           <p class="p">Hand-picked instructor and expertly crafted courses, designed for the modern students and entrepreneur.</p>
-          <button>Browse Courses</button>
-          <button>Are You Instructor?</button>
+          <div>
+            <button class="border-0 rounded-1 bg-success text-light px-3 py-2">Browse Courses</button>
+            <button class="border-0 rounded-1 bg-light text-dark px-3 py-2">Are You Instructor?</button>
+          </div>
         </div>
   
-        <div>
-          <img src="assets/img/hero-img.png" alt="">
+        <div class="me-3">
+          <img class="pe-5" src="assets/img/hero-img.png" alt="foto hero">
         </div>
-      </main>
       </section>
+
+      <!-- sezione informazioni generali -->
+      <section id="sec-info" class="d-flex container-fluid bg-white pt-2 border-bottom border-grey justify-content-evenly">
+        
+        <div class="d-flex align-baseline">
+          <div class="div me-3 rounded-circle">
+            <img class="text-center p-3" src="assets/icons/camera-video.svg" alt="immagine camera-video">
+          </div>
+          <div>
+            <h4 class="h4 fw-bold m-0">30,000 online courses</h4>
+            <p class="p text-black-50">Enjoy a variety of fresh topics</p>
+          </div>
+        </div>
+
+        <div class="d-flex align-baseline">
+          <div class="div me-3 rounded-circle">
+            <img class="text-center p-3" src="assets/icons/people.svg" alt="immagine persone">
+          </div>
+          <div>
+            <h4 class="h4 fw-bold m-0">Expert instruction</h4>
+            <p class="p text-black-50">Find the right instruction to you</p>
+          </div>
+        </div>
+
+        <div class="d-flex align-baseline">
+          <div class="div me-3 rounded-circle">
+            <img class="text-center p-3" src="assets/icons/clock.svg" alt="immagine orologio">
+          </div>
+          <div>
+            <h4 class="h4 fw-bold m-0">Lifetime access</h4>
+            <p class="p text-black-50">Learn on your schedule</p>
+          </div>
+        </div>
+
+      </section>
+    </header> <!-- FINE HEADER -->
+
+
+    <!-- MAIN -->
+    <main>
+      <!-- SEZIONE RECOMMENDED TO YOU -->
+      <section id="sec-rec" class="container px-5">
+        <div><h4 class="h4 fw-bold ms-3 mb-4">Recommended to you</h4></div>
+
+
+        <div class="d-flex container justify-content-between">
+          <div class="mx-2 rounded-1 bg-white shadow-sm mb-5 bg-body">
+            <div>
+              <img class="grandezza100 rounded-top-1" src="assets/img/course-graphql.jpg" alt="corso graphql">
+            </div>
+
+            <div class="p-3">
+              <h5 class="h5">GraphQL: introduction to graphQL for beginners</h5>
+
+              <div>
+                <img src="assets/icons/clock.svg" alt="orologio">
+                <p class="p">2h 40m</p>
+                <img src="assets/icons/reception-3.svg" alt="segnale">
+                <p class="p">Advance</p>
+              </div>
+              <!-- stelle da aggiungere -->
+
+              <div class="border-bottom border-grey">
+                <p class="p fw-bold">$500</p>
+                <p class="p text-black-50 text-decoration-line-through">$600</p>
+              </div>
+
+              <div>
+                <img class="grandezzaAvatar" src="assets/img/avatar-5.jpg" alt="foto Brooklyn">
+                <p class="p text-black-50">Brooklyn Simmons</p>
+                <img src="assets/icons/bookmark.svg" alt="segnalibro">
+              </div>
+            </div>
+          </div>
+
+          <div class="mx-2 rounded-1 bg-white shadow-sm mb-5 bg-body">
+            <div>
+              <img class="grandezza100 rounded-top-1" src="assets/img/course-javascript.jpg" alt="corso javascript">
+            </div>
+
+            <div class="p-3">
+              <h5 class="h5">GraphQL: introduction to graphQL for beginners</h5>
+
+              <div>
+                <img src="assets/icons/clock.svg" alt="orologio">
+                <p class="p">2h 40m</p>
+                <img src="assets/icons/reception-3.svg" alt="segnale">
+                <p class="p">Advance</p>
+              </div>
+              <!-- stelle da aggiungere -->
+
+              <div class="border-bottom border-grey">
+                <p class="p fw-bold">$500</p>
+                <p class="p text-black-50 text-decoration-line-through">$600</p>
+              </div>
+
+              <div>
+                <img class="grandezzaAvatar" src="assets/img/avatar-5.jpg" alt="foto Brooklyn">
+                <p class="p text-black-50">Brooklyn Simmons</p>
+                <img src="assets/icons/bookmark.svg" alt="segnalibro">
+              </div>
+            </div>
+          </div>
+
+          <div class="mx-2 rounded-1 bg-white shadow-sm mb-5 bg-body">
+            <div>
+              <img class="grandezza100 rounded-top-1" src="assets/img/course-node.jpg" alt="corso node js">
+            </div>
+
+            <div class="p-3">
+              <h5 class="h5">GraphQL: introduction to graphQL for beginners</h5>
+
+              <div>
+                <img src="assets/icons/clock.svg" alt="orologio">
+                <p class="p">2h 40m</p>
+                <img src="assets/icons/reception-3.svg" alt="segnale">
+                <p class="p">Advance</p>
+              </div>
+              <!-- stelle da aggiungere -->
+
+              <div class="border-bottom border-grey">
+                <p class="p fw-bold">$500</p>
+                <p class="p text-black-50 text-decoration-line-through">$600</p>
+              </div>
+
+              <div>
+                <img class="grandezzaAvatar" src="assets/img/avatar-5.jpg" alt="foto Brooklyn">
+                <p class="p text-black-50">Brooklyn Simmons</p>
+                <img src="assets/icons/bookmark.svg" alt="segnalibro">
+              </div>
+            </div>
+          </div>
+
+          <div class="mx-2 rounded-1 bg-white shadow-sm mb-5 bg-body">
+            <div>
+              <img class="grandezza100 rounded-top-1" src="assets/img/course-laravel.jpg" alt="corso laravel">
+            </div>
+
+            <div class="p-3">
+              <h5 class="h5">GraphQL: introduction to graphQL for beginners</h5>
+
+              <div>
+                <img src="assets/icons/clock.svg" alt="orologio">
+                <p class="p">2h 40m</p>
+                <img src="assets/icons/reception-3.svg" alt="segnale">
+                <p class="p">Advance</p>
+              </div>
+              <!-- stelle da aggiungere -->
+
+              <div class="border-bottom border-grey">
+                <p class="p fw-bold">$500</p>
+                <p class="p text-black-50 text-decoration-line-through">$600</p>
+              </div>
+
+              <div>
+                <img class="grandezzaAvatar" src="assets/img/avatar-5.jpg" alt="foto Brooklyn">
+                <p class="p text-black-50">Brooklyn Simmons</p>
+                <img src="assets/icons/bookmark.svg" alt="segnalibro">
+              </div>
+            </div>
+          </div>
+      </div>
+
+    </section>
+
+    </main>
+
+      
 
     <!-- footer -->
     <footer>

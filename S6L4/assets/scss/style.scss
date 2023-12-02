@@ -1,1 +1,71 @@
 @import '../scss/override';
+
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+$font-Inter: 'Inter', sans-serif;
+
+
+/* VARIABLES */
+$divWelcome: 70%;
+$imgWelcome: 100%;
+$imgInfo: 20%;
+$coloreBody: #f5f4f8;
+
+/* BODY */
+body {
+    font-family: $font-Inter;
+    background-color: $coloreBody;
+}
+
+
+/* SECTION WELCOME*/
+#sec-welcome {
+    div {
+        width: $divWelcome;
+    }
+
+    div p {
+        color: #bca8ff;
+    }
+
+    img {
+        width: $imgWelcome;
+        height: $imgWelcome;
+    }
+}
+
+/* SECTION INFORMAZIONI GENERALI */
+#sec-info {
+    height: 6em;
+
+    .div {
+        height: 50%;
+        background-color: #ffeeda;
+    }
+}
+
+
+
+
+
+/*MAIN*/
+
+
+/* SECTION RECOMMENDED */
+#sec-rec {
+    margin-top: 5em;
+}
+
+
+/* ALTRI CLASSI */ 
+.border-grey {
+    border-color: gray;
+}
+
+.grandezzaAvatar {
+    width: 10%;
+}
+
+.grandezza100 {
+    width: 100%;
+}

@@ -1,4 +1,20 @@
-@import '../bootstrap/bootstrap-5.3.2/scss/bootstrap.scss';
+@import '../bootstrap/bootstrap-5.3.2/scss/functions';
 @import '../bootstrap/bootstrap-5.3.2/scss/_variables.scss';
 
 $blue: #7550fe;
+$primary: $blue;
+
+$green: #1acb98;
+$success: $green;
+
+$custom-colors: (
+       'blue': $blue,
+       'primary': $primary,
+       'green': $green,
+       'success': $success
+);
+
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+@import '../bootstrap/bootstrap-5.3.2/scss/bootstrap.scss';
