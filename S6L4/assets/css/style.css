@@ -12046,6 +12046,46 @@ textarea.form-control-lg {
 }
 /* FONTS */
 /* VARIABLES */
+.custom-width-0 {
+  width: 0%;
+}
+
+.custom-width-1 {
+  width: 10%;
+}
+
+.custom-width-2 {
+  width: 20%;
+}
+
+.custom-width-3 {
+  width: 30%;
+}
+
+.custom-width-4 {
+  width: 40%;
+}
+
+.custom-width-5 {
+  width: 50%;
+}
+
+.custom-width-6 {
+  width: 60%;
+}
+
+.custom-width-7 {
+  width: 70%;
+}
+
+.custom-width-8 {
+  width: 80%;
+}
+
+.custom-width-9 {
+  width: 90%;
+}
+
 /* BODY */
 body {
   font-family: "Inter", sans-serif;
