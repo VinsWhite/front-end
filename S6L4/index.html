@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Compra uno dei nostri corsi per diventare presto un Full Web Stack Developer">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/img/logo.svg">
     <title>Genio Corsi</title>
 </head>
 <body>
@@ -127,11 +128,22 @@
     <!-- MAIN -->
     <main>
       <!-- SEZIONE RECOMMENDED TO YOU -->
-      <section id="sec-rec" class="container px-5">
+      <section class="sections container px-5">
         <div><h4 class="h4 fw-bold ms-3 mb-4">Recommended to you</h4></div>
 
+        <!-- contenitore corso graphQL -->
+        <div class="d-flex container justify-content-between position-relative">
+          
+          <!-- icone laterali per sfogliare altri corsi -->
+          <div class="arrow-l">
+            <img src="assets/icons/arrow_left.svg" alt="sfoglia a sinitra">
+          </div>
 
-        <div class="d-flex container justify-content-between">
+          <div class="arrow-r">
+            <img src="assets/icons/arrow_right.svg" alt="sfoglia a destra">
+          </div>
+
+
           <div class="mx-2 rounded-1 bg-white shadow-sm mb-5 bg-body">
             <div>
               <img class="grandezza100 rounded-top-1" src="assets/img/course-graphql.jpg" alt="corso graphql">
@@ -140,113 +152,409 @@
             <div class="p-3">
               <h5 class="h5">GraphQL: introduction to graphQL for beginners</h5>
 
-              <div>
+              <div class="d-flex align-baseline">
                 <img src="assets/icons/clock.svg" alt="orologio">
-                <p class="p">2h 40m</p>
-                <img src="assets/icons/reception-3.svg" alt="segnale">
-                <p class="p">Advance</p>
+                <p class="ps-2 m-0">2h 40m</p>
+                <img class="ps-3 m-0" src="assets/icons/reception-3.svg" alt="segnale">
+                <p class="ps-2 m-0">Advance</p>
               </div>
               <!-- stelle da aggiungere -->
 
-              <div class="border-bottom border-grey">
+              <div class="border-bottom border-grey d-flex mt-2">
                 <p class="p fw-bold">$500</p>
-                <p class="p text-black-50 text-decoration-line-through">$600</p>
+                <p class="p text-black-50 text-decoration-line-through ps-2">$600</p>
               </div>
 
-              <div>
-                <img class="grandezzaAvatar" src="assets/img/avatar-5.jpg" alt="foto Brooklyn">
-                <p class="p text-black-50">Brooklyn Simmons</p>
-                <img src="assets/icons/bookmark.svg" alt="segnalibro">
+              <div class="mt-3 d-flex position-relative">
+                <img class="grandezzaAvatar rounded-circle" src="assets/img/avatar-5.jpg" alt="foto Brooklyn">
+                <p class="p text-black-50 m-0 ps-2">Brooklyn Simmons</p>
+                <img class="ps-3 position-absolute end-0 top-50 translate-middle-y" src="assets/icons/bookmark.svg" alt="segnalibro">
               </div>
             </div>
           </div>
 
+
+          <!-- contenitore corso javascript -->
           <div class="mx-2 rounded-1 bg-white shadow-sm mb-5 bg-body">
             <div>
               <img class="grandezza100 rounded-top-1" src="assets/img/course-javascript.jpg" alt="corso javascript">
             </div>
 
             <div class="p-3">
-              <h5 class="h5">GraphQL: introduction to graphQL for beginners</h5>
+              <h5 class="h5">A Complete Beginner's Guide to Javascript</h5>
 
-              <div>
+              <div class="d-flex align-baseline">
                 <img src="assets/icons/clock.svg" alt="orologio">
-                <p class="p">2h 40m</p>
-                <img src="assets/icons/reception-3.svg" alt="segnale">
-                <p class="p">Advance</p>
+                <p class="ps-2 m-0">4h 10m</p>
+                <img class="ps-3 m-0" src="assets/icons/reception-3.svg" alt="segnale">
+                <p class="ps-2 m-0">Advance</p>
               </div>
               <!-- stelle da aggiungere -->
 
-              <div class="border-bottom border-grey">
-                <p class="p fw-bold">$500</p>
-                <p class="p text-black-50 text-decoration-line-through">$600</p>
+              <div class="border-bottom border-grey d-flex mt-2">
+                <p class="p fw-bold">$700</p>
+                <p class="p text-black-50 text-decoration-line-through ps-2">$850</p>
               </div>
 
-              <div>
-                <img class="grandezzaAvatar" src="assets/img/avatar-5.jpg" alt="foto Brooklyn">
-                <p class="p text-black-50">Brooklyn Simmons</p>
-                <img src="assets/icons/bookmark.svg" alt="segnalibro">
+              <div class="mt-3 d-flex position-relative">
+                <img class="grandezzaAvatar rounded-circle" src="assets/img/avatar-1.jpg" alt="foto Jenny">
+                <p class="p text-black-50 m-0 ps-2">Jenny Wilson</p>
+                <img class="ps-3 position-absolute end-0 top-50 translate-middle-y" src="assets/icons/bookmark.svg" alt="segnalibro">
               </div>
             </div>
           </div>
 
+
+          <!-- contenitore corso node js -->
           <div class="mx-2 rounded-1 bg-white shadow-sm mb-5 bg-body">
             <div>
               <img class="grandezza100 rounded-top-1" src="assets/img/course-node.jpg" alt="corso node js">
             </div>
 
             <div class="p-3">
-              <h5 class="h5">GraphQL: introduction to graphQL for beginners</h5>
+              <h5 class="h5">Beginning Node.js, Express & MongoDB Development</h5>
 
-              <div>
+              <div class="d-flex align-baseline">
                 <img src="assets/icons/clock.svg" alt="orologio">
-                <p class="p">2h 40m</p>
-                <img src="assets/icons/reception-3.svg" alt="segnale">
-                <p class="p">Advance</p>
+                <p class="ps-2 m-0">2h 0m</p>
+                <img class="ps-3 m-0" src="assets/icons/reception-2.svg" alt="segnale">
+                <p class="ps-1 m-0">Intermediate</p>
               </div>
               <!-- stelle da aggiungere -->
 
-              <div class="border-bottom border-grey">
-                <p class="p fw-bold">$500</p>
-                <p class="p text-black-50 text-decoration-line-through">$600</p>
+              <div class="border-bottom border-grey d-flex mt-2">
+                <p class="p fw-bold">$800</p>
+                <p class="p text-black-50 text-decoration-line-through ps-2">$950</p>
               </div>
 
-              <div>
-                <img class="grandezzaAvatar" src="assets/img/avatar-5.jpg" alt="foto Brooklyn">
-                <p class="p text-black-50">Brooklyn Simmons</p>
-                <img src="assets/icons/bookmark.svg" alt="segnalibro">
+              <div class="mt-3 d-flex position-relative">
+                <img class="grandezzaAvatar rounded-circle" src="assets/img/avatar-3.jpg" alt="foto Sina">
+                <p class="p text-black-50 m-0 ps-2">Sina Ray</p>
+                <img class="ps-3 position-absolute end-0 top-50 translate-middle-y" src="assets/icons/bookmark.svg" alt="segnalibro">
               </div>
             </div>
           </div>
 
+
+          <!-- contenitore corso laravel -->
           <div class="mx-2 rounded-1 bg-white shadow-sm mb-5 bg-body">
             <div>
               <img class="grandezza100 rounded-top-1" src="assets/img/course-laravel.jpg" alt="corso laravel">
             </div>
 
             <div class="p-3">
-              <h5 class="h5">GraphQL: introduction to graphQL for beginners</h5>
+              <h5 class="h5">Laravel: The Ultime Beginner's Guide to Learn</h5>
 
-              <div>
+              <div class="d-flex align-baseline">
                 <img src="assets/icons/clock.svg" alt="orologio">
-                <p class="p">2h 40m</p>
-                <img src="assets/icons/reception-3.svg" alt="segnale">
-                <p class="p">Advance</p>
+                <p class="ps-2 m-0">1h 0m</p>
+                <img class="ps-3 m-0" src="assets/icons/reception-1.svg" alt="segnale">
+                <p class="ps-2 m-0">Beginner</p>
               </div>
               <!-- stelle da aggiungere -->
 
-              <div class="border-bottom border-grey">
-                <p class="p fw-bold">$500</p>
-                <p class="p text-black-50 text-decoration-line-through">$600</p>
+              <div class="border-bottom border-grey d-flex mt-2">
+                <p class="p fw-bold">$170</p>
+                <p class="p text-black-50 text-decoration-line-through ps-2">$220</p>
               </div>
 
-              <div>
-                <img class="grandezzaAvatar" src="assets/img/avatar-5.jpg" alt="foto Brooklyn">
-                <p class="p text-black-50">Brooklyn Simmons</p>
-                <img src="assets/icons/bookmark.svg" alt="segnalibro">
+              <div class="mt-3 d-flex position-relative">
+                <img class="grandezzaAvatar rounded-circle" src="assets/img/avatar-7.jpg" alt="foto Sobo">
+                <p class="p text-black-50 m-0 ps-2">Sobo Rikhan</p>
+                <img class="ps-3 position-absolute end-0 top-50 translate-middle-y" src="assets/icons/bookmark.svg" alt="segnalibro">
               </div>
             </div>
           </div>
+          
+      </div>
+
+    </section>
+
+
+      <!-- SEZIONE MOST POPULAR -->
+      <section class="sections container px-5">
+        <div><h4 class="h4 fw-bold ms-3 mb-4">Most Popular</h4></div>
+
+        <!-- contenitore corso HTML5 -->
+        <div class="d-flex container justify-content-between position-relative">
+          
+          <!-- icone laterali per sfogliare altri corsi -->
+          <div class="arrow-l">
+            <img src="assets/icons/arrow_left.svg" alt="sfoglia a sinitra">
+          </div>
+
+          <div class="arrow-r">
+            <img src="assets/icons/arrow_right.svg" alt="sfoglia a destra">
+          </div>
+
+
+          <div class="mx-2 rounded-1 bg-white shadow-sm mb-5 bg-body">
+            <div>
+              <img class="grandezza100 rounded-top-1" src="assets/img/course-html.jpg" alt="corso html5">
+            </div>
+
+            <div class="p-3">
+              <h5 class="h5">HTML Full Course - Build a Website Tutorial</h5>
+
+              <div class="d-flex align-baseline">
+                <img src="assets/icons/clock.svg" alt="orologio">
+                <p class="ps-2 m-0">3h 16m</p>
+                <img class="ps-3 m-0" src="assets/icons/reception-1.svg" alt="difficoltà 1">
+                <p class="ps-2 m-0">Beginner</p>
+              </div>
+              <!-- stelle da aggiungere -->
+
+              <div class="border-bottom border-grey d-flex mt-2">
+                <p class="p fw-bold">$550</p>
+                <p class="p text-black-50 text-decoration-line-through ps-2">$700</p>
+              </div>
+
+              <div class="mt-3 d-flex position-relative">
+                <img class="grandezzaAvatar rounded-circle" src="assets/img/avatar-8.jpg" alt="foto Miston">
+                <p class="p text-black-50 m-0 ps-2">Miston Wilson</p>
+                <img class="ps-3 position-absolute end-0 top-50 translate-middle-y" src="assets/icons/bookmark.svg" alt="segnalibro">
+              </div>
+            </div>
+          </div>
+
+
+          <!-- contenitore corso javascript -->
+          <div class="mx-2 rounded-1 bg-white shadow-sm mb-5 bg-body">
+            <div>
+              <img class="grandezza100 rounded-top-1" src="assets/img/course-javascript.jpg" alt="corso javascript">
+            </div>
+
+            <div class="p-3">
+              <h5 class="h5">A Complete Beginner's Guide to Javascript</h5>
+
+              <div class="d-flex align-baseline">
+                <img src="assets/icons/clock.svg" alt="orologio">
+                <p class="ps-2 m-0">4h 10m</p>
+                <img class="ps-3 m-0" src="assets/icons/reception-3.svg" alt="segnale">
+                <p class="ps-2 m-0">Advance</p>
+              </div>
+              <!-- stelle da aggiungere -->
+
+              <div class="border-bottom border-grey d-flex mt-2">
+                <p class="p fw-bold">$700</p>
+                <p class="p text-black-50 text-decoration-line-through ps-2">$850</p>
+              </div>
+
+              <div class="mt-3 d-flex position-relative">
+                <img class="grandezzaAvatar rounded-circle" src="assets/img/avatar-1.jpg" alt="foto Jenny">
+                <p class="p text-black-50 m-0 ps-2">Jenny Wilson</p>
+                <img class="ps-3 position-absolute end-0 top-50 translate-middle-y" src="assets/icons/bookmark.svg" alt="segnalibro">
+              </div>
+            </div>
+          </div>
+
+
+          <!-- contenitore corso node js -->
+          <div class="mx-2 rounded-1 bg-white shadow-sm mb-5 bg-body">
+            <div>
+              <img class="grandezza100 rounded-top-1" src="assets/img/course-node.jpg" alt="corso node js">
+            </div>
+
+            <div class="p-3">
+              <h5 class="h5">Beginning Node.js, Express & MongoDB Development</h5>
+
+              <div class="d-flex align-baseline">
+                <img src="assets/icons/clock.svg" alt="orologio">
+                <p class="ps-2 m-0">2h 0m</p>
+                <img class="ps-3 m-0" src="assets/icons/reception-2.svg" alt="segnale">
+                <p class="ps-1 m-0">Intermediate</p>
+              </div>
+              <!-- stelle da aggiungere -->
+
+              <div class="border-bottom border-grey d-flex mt-2">
+                <p class="p fw-bold">$800</p>
+                <p class="p text-black-50 text-decoration-line-through ps-2">$950</p>
+              </div>
+
+              <div class="mt-3 d-flex position-relative">
+                <img class="grandezzaAvatar rounded-circle" src="assets/img/avatar-3.jpg" alt="foto Sina">
+                <p class="p text-black-50 m-0 ps-2">Sina Ray</p>
+                <img class="ps-3 position-absolute end-0 top-50 translate-middle-y" src="assets/icons/bookmark.svg" alt="segnalibro">
+              </div>
+            </div>
+          </div>
+
+
+          <!-- contenitore corso React -->
+          <div class="mx-2 rounded-1 bg-white shadow-sm mb-5 bg-body">
+            <div>
+              <img class="grandezza100 rounded-top-1" src="assets/img/course-react.jpg" alt="corso react">
+            </div>
+
+            <div class="p-3">
+              <h5 class="h5">How to easily create a website with React</h5>
+
+              <div class="d-flex align-baseline">
+                <img src="assets/icons/clock.svg" alt="orologio">
+                <p class="ps-2 m-0">3h 55m</p>
+                <img class="ps-3 m-0" src="assets/icons/reception-3.svg" alt="segnale">
+                <p class="ps-2 m-0">Advance</p>
+              </div>
+              <!-- stelle da aggiungere -->
+
+              <div class="border-bottom border-grey d-flex mt-2">
+                <p class="p fw-bold">$600</p>
+                <p class="p text-black-50 text-decoration-line-through ps-2">$750</p>
+              </div>
+
+              <div class="mt-3 d-flex position-relative">
+                <img class="grandezzaAvatar rounded-circle" src="assets/img/avatar-6.jpg" alt="foto April">
+                <p class="p text-black-50 m-0 ps-2">April Noms</p>
+                <img class="ps-3 position-absolute end-0 top-50 translate-middle-y" src="assets/icons/bookmark.svg" alt="segnalibro">
+              </div>
+            </div>
+          </div>
+          
+      </div>
+
+    </section>
+
+
+
+       <!-- SEZIONE TRENDING -->
+       <section class="sections container px-5">
+        <div><h4 class="h4 fw-bold ms-3 mb-4">Trending</h4></div>
+
+        <!-- contenitore corso Gatsby -->
+        <div class="d-flex container justify-content-between position-relative">
+          
+          <!-- icone laterali per sfogliare altri corsi -->
+          <div class="arrow-l">
+            <img src="assets/icons/arrow_left.svg" alt="sfoglia a sinitra">
+          </div>
+
+          <div class="arrow-r">
+            <img src="assets/icons/arrow_right.svg" alt="sfoglia a destra">
+          </div>
+
+
+          <div class="mx-2 rounded-1 bg-white shadow-sm mb-5 bg-body">
+            <div>
+              <img class="grandezza100 rounded-top-1" src="assets/img/course-gatsby.jpg" alt="corso Gatsby">
+            </div>
+
+            <div class="p-3">
+              <h5 class="h5">Revolutionize how you build the web</h5>
+
+              <div class="d-flex align-baseline">
+                <img src="assets/icons/clock.svg" alt="orologio">
+                <p class="ps-2 m-0">1h 46m</p>
+                <img class="ps-2 m-0" src="assets/icons/reception-2.svg" alt="difficoltà 2">
+                <p class="ps-1 m-0">Intermediate</p>
+              </div>
+              <!-- stelle da aggiungere -->
+
+              <div class="border-bottom border-grey d-flex mt-2">
+                <p class="p fw-bold">$800</p>
+                <p class="p text-black-50 text-decoration-line-through ps-2">$850</p>
+              </div>
+
+              <div class="mt-3 d-flex position-relative">
+                <img class="grandezzaAvatar rounded-circle" src="assets/img/avatar-2.jpg" alt="foto jenny">
+                <p class="p text-black-50 m-0 ps-2">Jenny Wilson</p>
+                <img class="ps-3 position-absolute end-0 top-50 translate-middle-y" src="assets/icons/bookmark.svg" alt="segnalibro">
+              </div>
+            </div>
+          </div>
+
+
+          <!-- contenitore corso javascript -->
+          <div class="mx-2 rounded-1 bg-white shadow-sm mb-5 bg-body">
+            <div>
+              <img class="grandezza100 rounded-top-1" src="assets/img/course-javascript.jpg" alt="corso javascript">
+            </div>
+
+            <div class="p-3">
+              <h5 class="h5">A Complete Beginner's Guide to Javascript</h5>
+
+              <div class="d-flex align-baseline">
+                <img src="assets/icons/clock.svg" alt="orologio">
+                <p class="ps-2 m-0">4h 10m</p>
+                <img class="ps-3 m-0" src="assets/icons/reception-3.svg" alt="segnale">
+                <p class="ps-2 m-0">Advance</p>
+              </div>
+              <!-- stelle da aggiungere -->
+
+              <div class="border-bottom border-grey d-flex mt-2">
+                <p class="p fw-bold">$700</p>
+                <p class="p text-black-50 text-decoration-line-through ps-2">$850</p>
+              </div>
+
+              <div class="mt-3 d-flex position-relative">
+                <img class="grandezzaAvatar rounded-circle" src="assets/img/avatar-1.jpg" alt="foto Jenny">
+                <p class="p text-black-50 m-0 ps-2">Jenny Wilson</p>
+                <img class="ps-3 position-absolute end-0 top-50 translate-middle-y" src="assets/icons/bookmark.svg" alt="segnalibro">
+              </div>
+            </div>
+          </div>
+
+
+          <!-- contenitore corso node js -->
+          <div class="mx-2 rounded-1 bg-white shadow-sm mb-5 bg-body">
+            <div>
+              <img class="grandezza100 rounded-top-1" src="assets/img/course-node.jpg" alt="corso node js">
+            </div>
+
+            <div class="p-3">
+              <h5 class="h5">Beginning Node.js, Express & MongoDB Development</h5>
+
+              <div class="d-flex align-baseline">
+                <img src="assets/icons/clock.svg" alt="orologio">
+                <p class="ps-2 m-0">2h 0m</p>
+                <img class="ps-3 m-0" src="assets/icons/reception-2.svg" alt="segnale">
+                <p class="ps-1 m-0">Intermediate</p>
+              </div>
+              <!-- stelle da aggiungere -->
+
+              <div class="border-bottom border-grey d-flex mt-2">
+                <p class="p fw-bold">$800</p>
+                <p class="p text-black-50 text-decoration-line-through ps-2">$950</p>
+              </div>
+
+              <div class="mt-3 d-flex position-relative">
+                <img class="grandezzaAvatar rounded-circle" src="assets/img/avatar-3.jpg" alt="foto Sina">
+                <p class="p text-black-50 m-0 ps-2">Sina Ray</p>
+                <img class="ps-3 position-absolute end-0 top-50 translate-middle-y" src="assets/icons/bookmark.svg" alt="segnalibro">
+              </div>
+            </div>
+          </div>
+
+
+          <!-- contenitore corso laravel -->
+          <div class="mx-2 rounded-1 bg-white shadow-sm mb-5 bg-body">
+            <div>
+              <img class="grandezza100 rounded-top-1" src="assets/img/course-laravel.jpg" alt="corso laravel">
+            </div>
+
+            <div class="p-3">
+              <h5 class="h5">Laravel: The Ultime Beginner's Guide to Learn</h5>
+
+              <div class="d-flex align-baseline">
+                <img src="assets/icons/clock.svg" alt="orologio">
+                <p class="ps-2 m-0">1h 0m</p>
+                <img class="ps-3 m-0" src="assets/icons/reception-1.svg" alt="segnale">
+                <p class="ps-2 m-0">Beginner</p>
+              </div>
+              <!-- stelle da aggiungere -->
+
+              <div class="border-bottom border-grey d-flex mt-2">
+                <p class="p fw-bold">$170</p>
+                <p class="p text-black-50 text-decoration-line-through ps-2">$220</p>
+              </div>
+
+              <div class="mt-3 d-flex position-relative">
+                <img class="grandezzaAvatar rounded-circle" src="assets/img/avatar-7.jpg" alt="foto Sobo">
+                <p class="p text-black-50 m-0 ps-2">Sobo Rikhan</p>
+                <img class="ps-3 position-absolute end-0 top-50 translate-middle-y" src="assets/icons/bookmark.svg" alt="segnalibro">
+              </div>
+            </div>
+          </div>
+          
       </div>
 
     </section>
@@ -256,8 +564,18 @@
       
 
     <!-- footer -->
-    <footer>
-
+    <footer class="container border-top d-flex justify-content-end text-black-50 py-2">
+      <div class="">
+        <p class="p">&#169; 2022 Geeks. All Rights Reserved.</p>
+      </div>
+      <div>
+        <ul class="d-flex">
+          <li class="list-group-item"><a href="#"></a>Privacy</li>
+          <li class="list-group-item ps-4"><a href="#"></a>Terms</li>
+          <li class="list-group-item ps-4"><a href="#"></a>Feedback</li>
+          <li class="list-group-item ps-4"><a href="#"></a>Support</li>
+        </ul>
+      </div>
     </footer>
     
     <script src="assets/bootstrap/bootstrap-5.3.2/dist/js/bootstrap.js"></script>

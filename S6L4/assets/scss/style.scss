@@ -10,6 +10,7 @@ $divWelcome: 70%;
 $imgWelcome: 100%;
 $imgInfo: 20%;
 $coloreBody: #f5f4f8;
+$avatar: 12%;
 
 /* BODY */
 body {
@@ -52,8 +53,12 @@ body {
 
 
 /* SECTION RECOMMENDED */
-#sec-rec {
+.sections {
     margin-top: 5em;
+
+    h5 {
+        height: 5em;
+    }
 }
 
 
@@ -63,9 +68,29 @@ body {
 }
 
 .grandezzaAvatar {
-    width: 10%;
+    width: $avatar;
+    width: $avatar;
 }
 
 .grandezza100 {
     width: 100%;
+}
+
+
+.arrow-l {
+    width: 2em;
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    left: -3%;
+    top: 42%
+}
+
+.arrow-r {
+    width: 2em;
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    right: -3%;
+    top: 42%
 }

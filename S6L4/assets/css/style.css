@@ -12075,8 +12075,11 @@ body {
 
 /*MAIN*/
 /* SECTION RECOMMENDED */
-#sec-rec {
+.sections {
   margin-top: 5em;
+}
+.sections h5, .sections .h5 {
+  height: 5em;
 }
 
 /* ALTRI CLASSI */
@@ -12085,9 +12088,28 @@ body {
 }
 
 .grandezzaAvatar {
-  width: 10%;
+  width: 12%;
+  width: 12%;
 }
 
 .grandezza100 {
   width: 100%;
+}
+
+.arrow-l {
+  width: 2em;
+  position: absolute;
+  background-color: white;
+  border-radius: 50%;
+  left: -3%;
+  top: 42%;
+}
+
+.arrow-r {
+  width: 2em;
+  position: absolute;
+  background-color: white;
+  border-radius: 50%;
+  right: -3%;
+  top: 42%;
 }/*# sourceMappingURL=style.css.map */
